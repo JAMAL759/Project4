@@ -1,6 +1,8 @@
 
 body{
   /* margin: 0 */
+  height: 50%;
+  background-color: aliceblue;
 }
 
 .logo {
@@ -81,6 +83,10 @@ width: 230px;
   }
 
 
+  .navBarImageP{
+    color: black;
+  }
+
   #CustomerView{
     height: 40px;
     width: 240px;
@@ -96,4 +102,90 @@ border-radius: 10px;
 
   #CustomerView p {
     color: black;
+  }
+
+  #RegestratoinForm {
+    padding-top: 4%;
+    padding-left: 1%;
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+
+  #RegestratoinFormH2 { 
+    display: flex;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: black;
+  height: 200px;
+  width: 300px;
+  justify-content: center;
+align-items: center;
+  }
+
+  #adminFormFirstPart{
+    display: flex;
+  
+  }
+
+
+  #adminForm{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    
+  }
+
+  #adminFormFirstPart{
+   width: 30%;
+   height: 50%;
+  }
+
+#adminFormSecondPart{
+   width: 30%;
+   height: 50%;
+}
+#email{
+  width: 210px;
+  height: 20px;
+  border-radius: 7px; 
+}
+
+  #Name{
+    width: 210px;
+    height: 20px;
+    border-radius: 7px;
+    margin-left: -3px;
+  }
+
+
+  #password{
+    width: 210px;
+    height: 20px;
+    border-radius: 7px;
+  }
+
+  #adminFormThirddPart { 
+    width: 30%;
+    height: 50%;
+  }
+
+
+  #ThreePartsFrom { 
+    display: flex;
+    flex-direction: column;
+  }
+ 
+
+  #RegestrationFormButton{
+    border: 2px solid black;
+    border-radius: 10px;
+    color: black;
+  height: 200px;
+  width: 300px;
+  justify-content: center;
+align-items: center;
+background-color:aliceblue;
   }

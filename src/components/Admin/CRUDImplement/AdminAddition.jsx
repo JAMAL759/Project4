@@ -58,6 +58,7 @@ const AdminAddition = () => {
           alert('User registered, please login')
           navigate('/admin/login')
         } catch (err) {
+            
             console.log("This is the error for registreation" , err)
          // alert(err.response?.data?.message || 'Registration failed')
         }
@@ -74,35 +75,62 @@ return (
 
     <img  id="navBarImage" src="./1.png" alt="" />
 
-    <Link to="/login">  <p> Login </p></Link>
-    <Link to="/login">  <p>Login1</p></Link>
-    <Link to="/login"> <p> Login2 </p> </Link>
-    <Link to="/login"> <p> Login3 </p> </Link>
+    <Link to="/login">  <p class="navBarImageP"> Login </p></Link>
+    <Link to="/login">  <p class="navBarImageP">Login1</p></Link>
+    <Link to="/login"> <p class="navBarImageP"> Login2 </p> </Link>
+    <Link to="/login"> <p class="navBarImageP"> Login3 </p> </Link>
 
-    <div id="CustomerView"> <p> CustomerView </p></div>
+    <div id="CustomerView">  <Link to="login"><p> CustomerView </p></Link></div>
 </div>
 </div>
     
+
+
+    <div id="RegestratoinForm"> 
     <form onSubmit={handleSubmitSignUp} >
 
+
+<div id="adminForm"> 
+
+
+<div id="RegestratoinFormH2"> 
 <h2> Register as admin  </h2>
-<div id="adminForm"  > 
+</div>
+
+
+<div id="ThreePartsFrom"> 
+
+<div class="adminFormFirstPart"> 
 <label htmlFor="Name">Name:</label>
+<br />
 <input id="Name" name="Name" onChange={handleChange} value={formData.Name} className="AdminFormInput" />
+</div>
+
+
 <br/>
-<br/>
+
+<div id="adminFormSecondPart"> 
 <label htmlFor="email">Email:</label>
 <input name="email" id="email" onChange={handleChange} value={formData.email} className="AdminFormInput" />
+</div>
+
 <br/>
-<br/>
+
+<div id="adminFormThirddPart"> 
 <label htmlFor="password">Password:</label>
 <input id="password" name="password" onChange={handleChange} value={formData.password} className="AdminFormInput" />
+</div>
+
+</div>
+
+
 <br/>
-<br/>
-<button type="submit">Submit</button>
+
+
+<button id="RegestrationFormButton" type="submit">Submit</button>
 </div>
 </form>
-
+</div>
 </div>
 
     
