@@ -121,13 +121,20 @@ return (
 <input id="password" name="password" onChange={handleChange} value={formData.password} className="AdminFormInput" />
 </div>
 
+<button id="RegestrationFormButton" type="submit">Submit</button>
 </div>
 
 
-<br/>
 
 
-<button id="RegestrationFormButton" type="submit">Submit</button>
+<div id="HighlightRegestrationForm"> 
+
+    <img src="./2.jpg" alt="" />
+</div>
+
+
+
+
 </div>
 </form>
 </div>

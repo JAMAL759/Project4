@@ -183,9 +183,27 @@ align-items: center;
     border: 2px solid black;
     border-radius: 10px;
     color: black;
-  height: 200px;
+  height: 50px;
   width: 300px;
   justify-content: center;
 align-items: center;
 background-color:aliceblue;
+margin-left: -313px;
   }
+
+  #HighlightRegestrationForm{
+    display: flex;
+    height: 200px;
+    width: 1000px;
+    background-color: black;
+    border-radius: 10px;
+  }
+
+#HighlightRegestrationForm img{
+  /* background-image: url("assets/2.jpg"); */
+  /* background-repeat: no-repeat; */
+  /* object-fit: contain; */
+  width: 100%;
+  border-radius: 10px;
+}
+  
