@@ -4,6 +4,10 @@ import { Link , useNavigate} from "react-router"
 import axios from "axios"
 import {jwtDecode} from 'jwt-decode'
 
+import Logo from '../../../assets/1.png'
+import Logo2 from '../../../assets/2.jpg'
+
+
 const AdminAdditionLogin = ({ onLogin , setUser}) => {
 
     const [email, setEmail] = useState('')
@@ -61,26 +65,76 @@ const AdminAdditionLogin = ({ onLogin , setUser}) => {
 return (
     <>
     
+
+    <div id="MainPage"> 
+        <div id="NavContainer"> 
+<div id="Nav"> 
+
+    <img  id="navBarImage" src={Logo} alt="" />
+
+    <Link to="/login">  <p class="navBarImageP"> Login </p></Link>
+    <Link to="/login">  <p class="navBarImageP">Login1</p></Link>
+    <Link to="/login"> <p class="navBarImageP"> Login2 </p> </Link>
+    <Link to="/login"> <p class="navBarImageP"> Login3 </p> </Link>
+
+    <div id="CustomerView">  <Link to="login"><p> CustomerView </p></Link></div>
+</div>
+</div>
+    
+
+
+    <div id="RegestratoinForm"> 
+        
     <form onSubmit={handleSubmitSignIn} >
 
-<h2> Register as admin  </h2>
-<div id="adminForm"  > 
-<label htmlFor="Name">Admin login Form:</label>
+
+<div id="adminForm"> 
+
+
+<div id="RegestratoinFormH2"> 
+<h2> login  as admin  </h2>
+</div>
+
+
+<div id="ThreePartsFrom"> 
+
+
+
+
 <br/>
-<br/>
+
+<div id="adminFormSecondPart"> 
 <label htmlFor="email">Email:</label>
 <input name="email" id="email" onChange={handleChange} value={formData.email} className="AdminFormInput" />
+</div>
+
 <br/>
-<br/>
+
+<div id="adminFormThirddPart"> 
 <label htmlFor="password">Password:</label>
 <input id="password" name="password" onChange={handleChange} value={formData.password} className="AdminFormInput" />
-<br/>
-<br/>
-<button type="submit">Submit</button>
+</div>
+<br />
+<br />
+<button id="RegestrationFormButton" type="submit">Submit</button>
+</div>
+
+
+
+
+<div id="HighlightRegestrationForm"> 
+
+    <img src={Logo2} alt="" />
+</div>
+
+
+
+
 </div>
 </form>
+</div>
+</div>
 
-    
     </>
 )
 
