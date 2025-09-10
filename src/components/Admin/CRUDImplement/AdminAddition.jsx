@@ -71,10 +71,15 @@ return (
     <div id="MainPage"> 
         <div id="NavContainer"> 
 <div id="Nav"> 
-    <Link to="/login">  Login</Link>
-    <Link to="/login">  Login1</Link>
-    <Link to="/login">  Login2</Link>
-    <Link to="/login">  Login3</Link>
+
+    <img  id="navBarImage" src="./1.png" alt="" />
+
+    <Link to="/login">  <p> Login </p></Link>
+    <Link to="/login">  <p>Login1</p></Link>
+    <Link to="/login"> <p> Login2 </p> </Link>
+    <Link to="/login"> <p> Login3 </p> </Link>
+
+    <div id="CustomerView"> <p> CustomerView </p></div>
 </div>
 </div>
     
