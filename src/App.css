@@ -152,6 +152,11 @@ align-items: center;
   height: 20px;
   border-radius: 7px; 
 }
+#StartTime{
+  width: 210px;
+  height: 20px;
+  border-radius: 7px; 
+}
 
   #Name{
     width: 210px;
@@ -167,9 +172,52 @@ align-items: center;
     border-radius: 7px;
   }
 
+  #Paid { 
+    width: 210px;
+    height: 20px;
+    border-radius: 7px;
+  }
+  #Country { 
+    width: 210px;
+    height: 20px;
+    border-radius: 7px;
+  }
+
   #adminFormThirddPart { 
     width: 30%;
     height: 50%;
+  }
+
+  #adminSixthPart { 
+    width: 30%;
+    height: 50%;
+  }
+
+#state{
+ width: 210px;
+    height: 20px;
+    border-radius: 7px;
+}
+
+  #Admin {
+    width: 210px;
+    height: 20px;
+    border-radius: 7px;
+  }
+
+  #adminFifthPart{
+    width: 30%;
+    height: 50%;
+  }
+  #adminFormFourthPart {
+    width: 30%;
+    height: 50%;
+  }
+
+  #EndTime{
+    width: 210px;
+    height: 20px;
+    border-radius: 7px; 
   }
 
 
@@ -178,6 +226,10 @@ align-items: center;
     flex-direction: column;
   }
  
+  #AnotherPartsFrom{
+    display: flex;
+    flex-direction: row;
+  }
 
   #RegestrationFormButton{
     border: 2px solid black;

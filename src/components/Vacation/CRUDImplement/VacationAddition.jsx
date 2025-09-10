@@ -19,7 +19,7 @@ const VacationAddition = ({user}) => {
         Paid: false,
         Country:"",
         Admin: user.id,
-        Customer: "",
+
 
     })
 
@@ -74,7 +74,7 @@ const VacationAddition = ({user}) => {
 
     return (
         <>
-
+{/* 
             <form onSubmit={handleSubmit} >
 
                 <h2> Register as admin  </h2>
@@ -176,8 +176,175 @@ const VacationAddition = ({user}) => {
 
                     <button type="submit">Submit</button>
                 </div>
-            </form>
+            </form> */}
 
+
+
+
+
+            <div id="MainPage"> 
+        <div id="NavContainer"> 
+<div id="Nav"> 
+
+    <img  id="navBarImage" src="./1.png" alt="" />
+
+    <Link to="/login">  <p class="navBarImageP"> Login </p></Link>
+    <Link to="/login">  <p class="navBarImageP">Login1</p></Link>
+    <Link to="/login"> <p class="navBarImageP"> Login2 </p> </Link>
+    <Link to="../VacationC"> <p class="navBarImageP"> Vacation Packages </p> </Link>
+
+    <div id="CustomerView">  <Link to="login"><p> CustomerView </p></Link></div>
+</div>
+</div>
+    
+
+
+    <div id="RegestratoinForm"> 
+        
+    <form onSubmit={handleSubmit} >
+
+
+<div id="adminForm"> 
+
+
+<div id="RegestratoinFormH2"> 
+<h2> Make a vacation package </h2>
+</div>
+
+
+<div id="AnotherPartsFrom"> 
+
+<div class="adminFormFirstPart"> 
+
+<label htmlFor="state" >state</label>
+<br />
+                    <select name="state" onChange={handleChange} id="state" >
+
+                        <option value="available"> available </option>
+                        <option value="unavailable"> unavailable </option>
+                    </select>
+
+                    
+                    <br />
+
+
+</div>
+
+
+<br/>
+
+<div id="adminFormSecondPart"> 
+
+   <label htmlFor="StartTime" >StartTime</label>
+                    <input
+                        id ="StartTime"
+                        type="date"
+                        name="StartTime"
+                        onChange={handleChange}
+                        value={formData.StartTime}
+                    />
+                    <br />
+</div>
+<br />          <br />
+<br/>
+
+<div id="adminFormThirddPart"> 
+      <label htmlFor="EndTime" >EndTime</label>
+                    <input
+                        id="EndTime"
+                        type="date"
+                        name="EndTime"
+                        onChange={handleChange}
+                        value={formData.EndTime}
+                    />
+                    <br />
+</div>
+
+
+
+
+<div id="adminFormFourthPart"> 
+                    <label htmlFor="Paid" >Paid</label>
+                    <select name="Paid" onChange={handleChange} id="Paid">
+
+                        <option value={true}> True </option>
+                        <option value={false}> False </option>
+                    </select>
+
+
+                    <br />
+
+</div> 
+
+
+<div id="adminFifthPart"> 
+     <label htmlFor="Country" >Country</label>
+
+                    <select name="Country" id="Country" onChange={handleChange} >
+
+
+                         
+                        <option value="Turkey"> Turkey </option>
+                        <option value="Malasiya"> Malasiya </option>
+                        <option value="Indonisia"> Indonisia </option>
+                        <option value="Morocco"> Morocco </option>
+
+
+                    </select>
+
+
+    </div> 
+                    
+<div id="adminSixthPart"> 
+            <label htmlFor="Admin" hidden>Admin</label>
+
+
+
+
+
+                    <input
+                        id="Admin"
+                        name="Admin"
+                        onChange={handleChange}
+                        value={formData.Admin}
+                        hidden
+                    />
+
+                    <br />
+
+    
+
+
+                    </div> 
+
+
+
+                         <input
+
+                        name="Customer"
+                        onChange={handleChange}
+                        value={formData.Customer}
+                        hidden
+                    />
+
+                    <br />
+                    <br />
+                    <br />
+<button id="RegestrationFormButton" type="submit">Submit</button>
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+</form>
+</div>
+</div>
 
         </>
     )

@@ -77,6 +77,7 @@ const App = () => {
     <Route path = "/Customer/login" element = { <CustomerAdditionLogin onLogin={handleLogin} setUser = {setUser} /> } /> 
     <Route path="Main/Customer/Profile" element={<CustomerProfile user={user} />}/>
     <Route path="/Vacation" element={<VacationAddition user={user} />}/>
+    <Route path="/VacationC" element={<VacationAdditionC user={user} />}/>
     <Route path="Main/VacationC" element={<VacationAdditionC user={user} />}/>
     <Route path="Main/Logout" element={<LogoutButton />}/>
     <Route path="/Main" element={<MainPage user={user} />}/>
